@@ -1,0 +1,31 @@
+{
+  "name": "lx-test",
+  "version": "1.0.0",
+  "description": "A test demo",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "lx",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^23.1.6",
+    "jest": "^23.4.0",
+    "jquery": "^3.3.1",
+    "ts-jest": "^23.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
