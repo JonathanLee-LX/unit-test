@@ -260,6 +260,20 @@ console.log(myMock.mock.instances)
 - `返回值` 返回一个`jest`对象可以用来做链式调用
 
 ``` javascript
+// foo.js
+const foo = () => 'foo'
+module.exports = foo
+
+// foo.test.js
+jest.mock('./foo')
+const foo = require('./foo')
+test('test mock function', () => {
+  expect(foo()).toBe(undefined)
+})
+
+```
+
+``` javascript
 import { shallowMount } from '@vue/test-utils';
 import Register from '@/components/Register.vue';
 
