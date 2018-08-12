@@ -27,5 +27,8 @@
       "json",
       "node"
     ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
   }
 }

@@ -41,5 +41,5 @@ jest.mock('./foo');
 const foo = require('./foo');
 foo.mockImplementation(() => 404);
 test('test foo.js', () => {
-  expect(foo()).toBe(200);
+  expect(foo()).toBe(404);
 });
