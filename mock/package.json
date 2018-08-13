@@ -9,5 +9,18 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "regenerator-runtime": "^0.12.1"
-  }
+  },
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "Get started with mock.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watchAll"
+  },
+  "keywords": [
+    "mock"
+  ],
+  "author": "JonathanLee",
+  "license": "MIT"
 }

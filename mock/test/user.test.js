@@ -1,5 +1,5 @@
-const axios = require('axios') 
-const Users = require('./user.js')
+import axios from 'axios';
+import { Users } from '../examples/user';
 
 jest.mock('axios');
 

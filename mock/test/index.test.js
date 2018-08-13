@@ -8,7 +8,7 @@ const weatherInfo = {
 getWeatherInfo.mockReturnValue(weatherInfo);
 
 test('test getWeatherInfo', () => {
-  expect(getWeatherInfo()).toBe({
+  expect(getWeatherInfo()).toEqual({
     temprature: 22,
     wind: 2,
     windDirection: 'east-south'
@@ -37,8 +37,9 @@ test('test filterTestFn', () => {
 // });
 
 // mock现有的实现
-jest.mock('./foo');
-const foo = require('./foo');
+jest.mock('../examples/foo.js');
+// const foo = require('./foo');
+import { foo } from '../examples/foo';
 foo.mockImplementation(() => 404);
 test('test foo.js', () => {
   expect(foo()).toBe(404);
