@@ -1,7 +1,6 @@
 import { getTotal } from '../examples/getTotal';
 
 jest.mock('../examples/getTotal.js');
-// const getTotal = require('../examples/getTotal');
 
 getTotal.mockImplementation((price, quality) => price * quality);
 

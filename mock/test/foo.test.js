@@ -1,5 +1,4 @@
 // foo.test.js
-// const foo = require('./foo');
 import { foo } from '../examples/foo';
 jest.mock('../examples/foo.js');
 
